@@ -1,0 +1,29 @@
+<% title='Create User Profile' %>
+
+
+<h1>Create User Profile</h1>
+
+
+<form action="/users/create_profile" method="POST" enctype="multipart/form-data">
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" required><br>
+
+
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" required><br>
+
+
+    <label for="technologies">Technologies:</label>
+    <input type="text" name="technologies" required><br>
+
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br>
+
+
+    <label for="display_picture">Display Picture:</label>
+    <input type="file" name="display_picture" accept="image/*" required><br>
+
+
+    <button type="submit">Submit</button>
+</form>
